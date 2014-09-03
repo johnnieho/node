@@ -1,7 +1,23 @@
 //use exports
+//////////////////////////////////
+// exports.data='ee';
+// var pb =5;
+// exports.getpb = function(){
+// 	return pb;
+// }
+/////////////////////////////////
 b=require('./b');
 console.log(b.data+'--'+b.getpb());
 //custom exports
+/////////////////////////////
+// module.exports = Person;
+// function Person(data){
+// 	this.data = data; 
+// };
+// Person.prototype.show = function(){
+// 	console.log('my data is : '+this.data);
+// }
+/////////////////////////////
 Person=require('./a');
 var jj = new Person('big d');
 jj.show();
